@@ -1,14 +1,52 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+
+  <ion-navbar color = "primary">
+    <ion-title>Domotica</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="box" >
+
+    <button ion-button (click)="goToCocina()">
+        COCINA
+      </button>
+
+      <button ion-button (click)="goToSalon()">
+          SALON
+        </button>
+
+        <button  ion-button (click)="goToPasillo()">
+            PASILLO
+          </button>
+
+          <button ion-button (click)="goToBano1()">
+              BAÑO1
+            </button>
+
+            <button ion-button (click)="goToBano2()">
+                BAÑO2
+              </button>
+
+              <button ion-button (click)="goToHabitacion1()">
+                  HABITACION1
+                </button>
+
+                <button ion-button (click)="goToHabitacion2()">
+                    HABITACION2
+                  </button>
+
+                  <button ion-button (click)="goToHabitacion3()">
+                      HABITACION3
+                    </button>
+
+                    <button  ion-button (click)="goToGeneral()">
+                        General
+                      </button>
 </ion-content>
