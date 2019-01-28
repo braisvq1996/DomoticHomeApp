@@ -47,7 +47,8 @@ export const firebaseConfig = {
     Habitacion2Page,
     Habitacion3Page,
     GeneralPage,
-    RegisterPage
+    RegisterPage,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +69,8 @@ export const firebaseConfig = {
     Habitacion2Page,
     Habitacion3Page,
     GeneralPage,
-    RegisterPage
+    RegisterPage,
+    HomePage
   ],
   providers: [
     StatusBar,
