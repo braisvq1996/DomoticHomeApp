@@ -36,6 +36,7 @@ import { EditBaño2PageModule } from '../pages/Edit/edit-baño2/edit-baño2.modu
 import { Habitacion1PageModule } from '../pages/Rooms/habitacion1/habitacion1.module';
 import { Habitacion2PageModule } from '../pages/Rooms/habitacion2/habitacion2.module';
 import { Habitacion3PageModule } from '../pages/Rooms/habitacion3/habitacion3.module';
+import { Baño2PageModule } from '../pages/Rooms/baño2/baño2.module';
 
 
 export const firebaseConfig = {
@@ -65,7 +66,7 @@ export const firebaseConfig = {
     RegisterPageModule,
     LoginPageModule,
     Baño1PageModule,
-    EditBaño2PageModule,
+    Baño2PageModule,
     Habitacion1PageModule,
     Habitacion2PageModule,
     Habitacion3PageModule
