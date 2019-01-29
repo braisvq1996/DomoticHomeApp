@@ -24,6 +24,18 @@ import {AngularFireAuthModule} from 'angularfire2/auth';
 import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { GeneralPage } from '../pages/Rooms/general/general';
+import { HomePageModule } from '../pages/home/home.module';
+import { CocinaPageModule } from '../pages/Rooms/cocina/cocina.module';
+import { SalonPageModule } from '../pages/Rooms/salon/salon.module';
+import { GeneralPageModule } from '../pages/Rooms/general/general.module';
+import { PasilloPageModule } from '../pages/Rooms/pasillo/pasillo.module';
+import { RegisterPageModule } from '../pages/register/register.module';
+import { LoginPageModule } from '../pages/login/login.module';
+import { Baño1PageModule } from '../pages/Rooms/baño1/baño1.module';
+import { EditBaño2PageModule } from '../pages/Edit/edit-baño2/edit-baño2.module';
+import { Habitacion1PageModule } from '../pages/Rooms/habitacion1/habitacion1.module';
+import { Habitacion2PageModule } from '../pages/Rooms/habitacion2/habitacion2.module';
+import { Habitacion3PageModule } from '../pages/Rooms/habitacion3/habitacion3.module';
 
 
 export const firebaseConfig = {
@@ -37,40 +49,30 @@ export const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    MyApp,
-    CocinaPage,
-    SalonPage,
-    PasilloPage,
-    Baño1Page,
-    Baño2Page,
-    Habitacion1Page,
-    Habitacion2Page,
-    Habitacion3Page,
-    GeneralPage,
-    RegisterPage,
-    HomePage
+    MyApp
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    HomePageModule,
+    CocinaPageModule,
+    SalonPageModule,
+    GeneralPageModule,
+    PasilloPageModule,
+    RegisterPageModule,
+    LoginPageModule,
+    Baño1PageModule,
+    EditBaño2PageModule,
+    Habitacion1PageModule,
+    Habitacion2PageModule,
+    Habitacion3PageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    CocinaPage,
-    SalonPage,
-    PasilloPage,
-    Baño1Page,
-    Baño2Page,
-    Habitacion1Page,
-    Habitacion2Page,
-    Habitacion3Page,
-    GeneralPage,
-    RegisterPage,
-    HomePage
+    MyApp
   ],
   providers: [
     StatusBar,
