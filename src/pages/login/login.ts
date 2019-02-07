@@ -30,7 +30,7 @@ export class LoginPage {
 
   alert(message: string) {
     this.alertCtrl.create({
-      title: 'Sesion iniciada',
+      title: 'DataBase Info',
       subTitle: message,
       buttons: ['OK']
     }).present();

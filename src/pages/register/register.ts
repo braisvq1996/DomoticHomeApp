@@ -29,7 +29,7 @@ export class RegisterPage {
 
   alert(message: string) {
     this.alertCtrl.create({
-      title: 'Registro',
+      title: 'DataBase Info',
       subTitle: message,
       buttons: ['OK']
     }).present();
