@@ -30,7 +30,7 @@ export class LoginPage {
 
   alert(message: string) {
     this.alertCtrl.create({
-      title: 'Info!',
+      title: 'Sesion iniciada',
       subTitle: message,
       buttons: ['OK']
     }).present();
@@ -39,18 +39,18 @@ export class LoginPage {
   signInUser() {
     this.fire.auth.signInWithEmailAndPassword(this.user.value , this.password.value)
     .then( data => {
-      console.log('got some data', this.fire.auth.currentUser);
-      this.alert('Success! You\'re logged in');
+      console.log('informacion conseguida', this.fire.auth.currentUser);
+      this.alert('Acceso a\ Basedatos concedida');
       this.navCtrl.push( HomePage );
 
       this.user.value="";
       this.password.value="";
     })
     .catch( error => {
-      console.log('got an error', error);
+      console.log('error obtenido', error);
       this.alert(error.message);
     })
-  	console.log('Would sign in with ', this.user.value, this.password.value);
+  	console.log('Inicia sesion con ', this.user.value, this.password.value);
   }
 
   Register(){

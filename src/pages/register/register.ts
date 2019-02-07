@@ -29,7 +29,7 @@ export class RegisterPage {
 
   alert(message: string) {
     this.alertCtrl.create({
-      title: 'Info!',
+      title: 'Registro',
       subTitle: message,
       buttons: ['OK']
     }).present();
@@ -38,14 +38,17 @@ export class RegisterPage {
   registerUser() {
     this.fire.auth.createUserWithEmailAndPassword(this.user.value , this.password.value)
     .then(data => {
-      console.log('got data ', data);
-      this.alert('Registered!');
+      console.log('informacion obtenida ', data);
+      this.alert('Usuario registrado\ correctamente');
+
+      this.user.value="";
+      this.password.value="";
     })
     .catch(error => {
-      console.log('got an error ', error);
+      console.log('error obtenido ', error);
       this.alert(error.message);
     });
-  	console.log('Would register user with ', this.user.value, this.password.value);
+  	console.log('Registrate con ', this.user.value, this.password.value);
   }
 
 }
