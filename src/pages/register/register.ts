@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the RegisterPage page.
@@ -43,6 +44,8 @@ export class RegisterPage {
 
       this.user.value="";
       this.password.value="";
+
+      this.navCtrl.push( LoginPage );
     })
     .catch(error => {
       console.log('error obtenido ', error);
